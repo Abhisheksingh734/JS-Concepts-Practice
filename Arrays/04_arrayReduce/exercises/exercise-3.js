@@ -10,6 +10,5 @@
           using a space to separate each item
 
     4. Print out "items", "caps" and "concat"
-
     BONUS: Can you do steps 1-3 in one line?
 */

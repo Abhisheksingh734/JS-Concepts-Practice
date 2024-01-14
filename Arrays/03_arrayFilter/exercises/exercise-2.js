@@ -8,3 +8,9 @@
 
     3. Print out both arrays
 */
+const prices=[1.23, 19.99, 85.2, 32.87, 8, 5.2];
+const filterArr=prices.filter((ele,index)=>{
+    return (ele+0.15*ele)<10.00;
+})
+console.log(prices);
+console.log(filterArr);

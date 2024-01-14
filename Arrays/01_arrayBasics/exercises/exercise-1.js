@@ -12,3 +12,13 @@
     BONUS: Try to see if you can make it so that all you need to change
     is the "multiple" variable and the program still works correctly.
 */
+
+function mult(args){
+    const arr=[10,11,12,13,14,15];
+    arr.forEach(element => {
+        console.log(element*args);
+    })
+}
+
+const multiple=5;
+mult(multiple);

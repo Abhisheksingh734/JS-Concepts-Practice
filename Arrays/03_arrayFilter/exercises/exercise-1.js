@@ -9,3 +9,11 @@
 
     HINT: Google for "javascript string contains"
 */
+
+const countries=["France", "South Africa", "Brazil", "United States", "Sweden"];
+
+const filteredCountries=countries.filter((ele,index)=>{
+    return ele.includes(" ");
+})
+console.log(countries);
+console.log(filteredCountries);

@@ -8,3 +8,15 @@
 
     3. Print out both arrays
 */
+
+const prices=[1.23, 19.99, 85.2, 32.87, 8, 5.2]
+
+const taxedPrices=prices.map((ele,index)=>{
+    if(ele>10){
+        return ele+0.2*ele;
+    }
+    else{
+        return ele;
+    }
+})
+console.log(taxedPrices);

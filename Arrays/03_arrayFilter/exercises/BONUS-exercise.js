@@ -13,3 +13,14 @@
 
     "over50" should contain: [60, 80, 100]
 */
+
+const nums=[10, 20, 30, 40, 50];
+const timesTwo=nums.map((ele,index)=>{
+    return ele*2;
+})
+const over50=timesTwo.filter((ele,index)=>{
+    return ele>50;
+})
+console.log(nums);
+console.log(timesTwo);
+console.log(over50);

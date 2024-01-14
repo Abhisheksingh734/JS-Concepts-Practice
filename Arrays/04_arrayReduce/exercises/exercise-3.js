@@ -12,3 +12,15 @@
     4. Print out "items", "caps" and "concat"
     BONUS: Can you do steps 1-3 in one line?
 */
+
+const items=["light", "banana", "phone", "book", "mouse"]
+const caps=items.map((curr,index)=>{
+    return curr.toUpperCase();
+})
+const concat=caps.reduce((acc,curr)=>{
+return acc+=curr+' '
+},'')
+
+console.log(items);
+console.log(caps);
+console.log(concat);

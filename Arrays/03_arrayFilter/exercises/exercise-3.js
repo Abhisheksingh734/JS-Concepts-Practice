@@ -12,3 +12,9 @@
 
     HINT: Google for "javascript array includes"
 */
+const values=[[1,2,3], [0,0,1], [3,6,9], [0,1,2]];
+const filterArr=values.filter((ele,index)=>{
+    return ele.includes(2);
+})
+console.log(values);
+console.log(filterArr);

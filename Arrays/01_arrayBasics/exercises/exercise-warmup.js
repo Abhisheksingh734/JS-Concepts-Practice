@@ -12,3 +12,16 @@
 
     *Print out the array after each of these steps ^
 */
+const arr=["Mercury",
+ "Venus"
+, "Earth"
+, "Mars"]
+arr.push("Jupiter");
+console.log(arr);
+arr.unshift("Sun");console.log(arr);
+// arr.pop();
+// arr.pop();
+arr.splice(-2);
+console.log(arr);
+arr.splice(0,2);
+console.log(arr)

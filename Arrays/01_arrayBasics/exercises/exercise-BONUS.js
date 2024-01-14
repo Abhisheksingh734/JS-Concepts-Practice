@@ -19,3 +19,19 @@
 
     WHY is this?
 */
+const bakery=["Cake","Cookie"
+,"Bread"
+,"Scone"];
+bakery.forEach(element => {
+    console.log(element);
+});
+// const myBakery=[bakery,"croissant","granola"];
+const myBakery=bakery;
+console.log(myBakery);
+myBakery.push("Croissant");
+myBakery.push("Granola");
+console.log("MY bakery")
+myBakery.forEach(ele=>{
+   
+    console.log(ele)
+})

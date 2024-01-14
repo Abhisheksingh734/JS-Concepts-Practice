@@ -15,3 +15,19 @@
 
     BONUS^2: Can you do 1-4 all in one line?
 */
+const nums=[10, 30, 50, 70, 90];
+const squares=nums.map((curr,index)=>{
+    return curr*curr;
+})
+
+const over1000=squares.filter((curr,index)=>{
+            return curr>1000;
+})
+
+const finale=over1000.reduce((acc,curr)=>{
+    acc+=curr;
+    return acc;
+})
+console.log(squares);
+console.log(over1000);
+console.log(finale);

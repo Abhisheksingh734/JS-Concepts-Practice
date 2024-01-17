@@ -13,3 +13,12 @@
     BONUS: How can you get rid of the trailing '-' ?
     TIP: Look up reduce on Google using docs like MDN
 */
+
+const companies=["apple", "tesla", "spacex", "amazon", "meta", "google"]
+const modded=companies.reduce((acc,curr)=>{
+    if(!curr.startsWith('a')){
+        acc=curr+'-'+acc}
+    return acc;},'');
+console.log(modded);
+const trailremoved=modded.slice(0,-1);
+console.log(trailremoved);

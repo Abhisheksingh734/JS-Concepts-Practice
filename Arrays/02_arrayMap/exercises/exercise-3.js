@@ -9,3 +9,15 @@
 
     4. Change it so if we see "mouse", we instead return "mice"
 */
+
+const items=["light", "banana", "phone", "book", "mouse"];
+
+const plurals=items.map((ele,index)=>{
+    if(ele==="mouse"){
+        return "mice";
+    }
+    
+    return ele+"s";
+})
+
+console.log(plurals);

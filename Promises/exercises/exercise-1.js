@@ -10,3 +10,19 @@
 
     HINT: Use setTimeout for the delay
 */
+
+console.log("Program started");
+const promise=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("Program complete");
+    },3000);
+    setTimeout(()=>{
+        reject("Program failure");
+    },2000);
+})
+
+console.log(promise);
+console.log("Program in progress...");
+promise.catch((msg)=>{
+console.log(msg);
+})

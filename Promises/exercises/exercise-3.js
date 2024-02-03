@@ -28,3 +28,33 @@ HINT2: This will be using the same promise two times:
 
 BONUS: WHY does it work this way? (how much time it takes?)
 */
+
+console.log("Program Started");
+
+const promise=new Promise((resolve,reject)=>{
+setTimeout(()=>{
+  resolve({data:"Hello, friend!",error:null});
+},5000)
+})
+
+console.log(promise);
+console.log("Program in progress...");
+
+promise.then((Data)=>{
+  console.log(Data.data);
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve({message: "First promise chain complete!"});
+    },2000)
+  })
+}).then((Data)=>{
+  console.log(Data.message);
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve({msg:"Second promise chain complete!"});
+    },10000)
+      
+  })
+}).then((data)=>{
+  console.log(data.msg);
+})
